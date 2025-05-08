@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bish-Bosh 2.0</title>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="style.css" />
+
+  </head>
+
+
+  <body>
+
+  <header>
+    <h1>Bish Bosh 2.0</h1>
+  </header>
+
+  <main>
+
+    <section class="description">
+    <h3> 🎪 Ladies and gentlemen, welcome to the most spectacularly pointless game ever : It's Bish-Bosh time! </h3>
+    <p><strong style="color: #bb03dc;">Bish</strong> appears if a number is divisible by your first chosen number.</p>
+    <p><strong style="color: #099509;">Bosh</strong> appears if a number is divisible by your second chosen number.</p>
+    <p><strong style="color: #fc872e;">BISH-BOSH</strong> appears if a number is divisible by both.</p>
+    <p><i>Enter your values (between 1 and 100) and see the result.</i></p>
+    </section>
+
+    <section class="inputs">
+      <label for="bishValue">Bish number (e.g. 3):</label>
+      <input type="number" id="bishValue" min="1" required />
+
+      <label for="boshValue">Bosh number (e.g. 4):</label>
+      <input type="number" id="boshValue" min="1" required />
+
+      <label for="loopEnd">Count up to (e.g. 100):</label>
+      <input type="number" id="loopEnd" min="1" required />
+
+      <button id="runButton">Let's Bish-Bosh!</button>
+    </section>
+
+
+
+    <section id="result">
+      <!-- Results will be displayed here -->
+    </section>
+  </main>
+
+  <footer>
+    <p>Created  with ❤️ by Élise © 2025</p>
+  </footer>
+
+  <script src="bishbosh.js"></script>
+
+  </body>
+</html>

@@ -1,0 +1,97 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f7efef;
+  color: #333;
+}
+
+h1 {
+  font-family: 'Fredoka', sans-serif;
+  font-size: 2.5em;
+}
+h3 {
+  font-family: 'Fredoka', sans-serif;
+  font-size: 1.5em;
+}
+
+header, footer {
+  background: #833AB4;
+background: linear-gradient(142deg, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 50%, rgba(252, 176, 69, 1) 100%);
+  color: white;
+  padding: 1em;
+  text-align: center;
+}
+
+main {
+  padding: 2em;
+  max-width: 600px;
+  margin: auto;
+}
+
+.inputs {
+  margin: 1em 0;
+
+}
+
+.inputs label {
+  display: block;
+  margin-top: 1em;
+}
+
+.inputs input {
+  width: 100%;
+  padding: 0.5em;
+  margin-top: 0.5em;
+  box-sizing: border-box;
+  border: 1px solid #833AB4;
+  border-radius: 4px;
+  transition: border-color 0.3s;
+}
+
+button {
+  margin-top: 1em;
+  padding: 0.7em 1.5em;
+  background: #833AB4;
+  color: white;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+button:hover {
+  background-color: #e76430;
+}
+
+#result {
+  margin-top: 2em;
+  padding: 1em;
+  background-color: white;
+  border: 1px solid #e76430;
+  min-height: 100px;
+  border-radius: 4px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+  transition: background-color 0.3s;
+}
+
+.bish {
+  font-weight: bold;
+  color: #bb03dc;
+}
+
+.bosh {
+  font-weight: bold;
+  color: #099509;
+}
+
+.bishbosh {
+  font-weight: bold;
+  color: #fc872e;
+  text-transform: uppercase;
+}
+
+.error{
+  color: #6c1b1b;
+  margin-top: 1em;
+}
