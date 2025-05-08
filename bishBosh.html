@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bish-Bosh</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <style>
+      body {
+        text-align: center;
+        padding: 50px;
+      }
+      </style>
+  </head>
+  
+  <body>
+
+    <h1>Welcome to Bish Bosh</h1>
+    <p>Click the button below to start the game!</p>
+    <button id="startButton">Start Game</button>
+
+    <div id="result"></div>
+
+    <script>
+      document.getElementById("startButton").addEventListener("click", function () {
+        const resultDiv = document.getElementById("result");
+        resultDiv.innerHTML = "";
+
+
+        for (let i = 1; i <= 100; i++) {
+          let output = "";
+
+          if (i % 3 === 0 && i % 4 === 0) {
+            output = "Bish-Bosh";
+          } else if (i % 3 === 0) {
+            output = "Bish";
+          } else if (i % 4 === 0) {
+            output = "Bosh";
+          } else {
+            output = i;
+          }
+
+          const p = document.createElement("p");
+          p.textContent = output;
+          resultDiv.appendChild(p);
+
+        }
+      });
+    </script>
+
+
+  </body>
+</html>
