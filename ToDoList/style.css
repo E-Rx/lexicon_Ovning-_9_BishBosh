@@ -1,0 +1,67 @@
+body {
+  background: #fff9f9;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1 {
+  color: #5243b2;
+  font-weight: bold;
+}
+
+#instruction{
+  font-size: 0.9rem;
+  font-style: italic;
+}
+
+#itemInput {
+  border: 2px solid #5243b2;
+  border-radius: 8px 0 0 8px;
+}
+
+#addButton {
+  background-color: #5243b2;
+  border-radius: 0 8px 8px 0;
+  border: none;
+  transition: background-color 0.3s ease;
+}
+
+#addButton:hover {
+  background-color: #7b68ee;
+}
+
+.list-group-item {
+  transition: background-color 0.3s ease, text-decoration 0.3s ease;
+  cursor: pointer;
+}
+
+.list-group-item.purchased {
+  text-decoration: line-through;
+  background-color: #e0e0e0;
+  color: #6c757d;
+}
+
+.remove-btn {
+  float: right;
+  color: rgb(183, 8, 8);
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.remove-btn:hover {
+  color: #f08080;
+}
+
+#clearListBtn {
+  width: auto;
+  padding: 5px 15px;
+  display: inline-block;
+  margin-left: 0;
+  background-color: #5243b2;
+  color: white;
+  border-radius: 4px;
+  border: none;
+}
+
+#clearListBtn:hover {
+  background-color: #7b68ee;
+}
