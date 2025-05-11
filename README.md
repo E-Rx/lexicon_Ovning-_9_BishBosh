@@ -18,7 +18,7 @@
   * `style.css` – stil för Bish-Bosh spelet
   * `bishbosh.js` – JavaScript-logiken bakom spelet
 
-* **The Epic Grocery Quest**:
+* **Grocery List Challenge**:
   * `index.html` – strukturen på webbsidan
   * `style.css` – stil och färger för inköpslistan
   * `todolist.js` – JavaScript-logiken bakom listan
