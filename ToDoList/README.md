@@ -1,7 +1,7 @@
 
-# 🛒 The Epic Grocery Quest
+# 🛒 Grocery List Challenge
 
-**The Epic Grocery Quest** är en webbaserad inköpslista som gör din vardag enklare.
+**Grocery List Challenge** är en webbaserad inköpslista som gör din vardag enklare.
 
 ## 🧠 Vad gör programmet?
 
