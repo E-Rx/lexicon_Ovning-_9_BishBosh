@@ -16,7 +16,7 @@ Programmet körs i webbläsaren. När du klickar på knappen **"Start Game"** vi
 
 * `index.html` – HTML-filen som innehåller både strukturen och JavaScript-koden.
 
-## 🚀 Hur man använder
+## 👩‍💻 Så använder du projektet
 
 1. Öppna filen `index.html` i en webbläsare.
 2. Klicka på knappen **"Start Game"**.

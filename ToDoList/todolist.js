@@ -2,36 +2,30 @@ document.addEventListener("DOMContentLoaded", function () {
   const input = document.getElementById("itemInput");
   const addButton = document.getElementById("addButton");
   const list = document.getElementById("itemList");
+  const clearListBtn = document.getElementById("clearListBtn");
 
   function createItem(text) {
     const li = document.createElement("li");
     li.className = "list-group-item d-flex justify-content-between align-items-center";
 
     const contentSpan = document.createElement("span");
-    contentSpan.className = "d-flex align-items-center gap-2";
-    contentSpan.style.cursor = "pointer";
+    contentSpan.className = "clickable-item";
 
-    // icon item
     const statusIcon = document.createElement("span");
+    statusIcon.className = "status-icon";
     statusIcon.textContent = "○";
-    statusIcon.style.fontWeight = "bold";
-    statusIcon.style.color = "#999";
 
-    // text item
     const textSpan = document.createElement("span");
     textSpan.textContent = text;
 
-    // ✅ Toggle purchased
+    // Toggle purchased
     contentSpan.addEventListener("click", function () {
       li.classList.toggle("purchased");
-      const purchased = li.classList.contains("purchased");
-      statusIcon.textContent = purchased ? "✔" : "○";
-      statusIcon.style.color = purchased ? "green" : "#999";
+      statusIcon.textContent = li.classList.contains("purchased") ? "✔" : "○";
     });
 
     contentSpan.appendChild(statusIcon);
     contentSpan.appendChild(textSpan);
-
 
     // Remove item
     const removeBtn = document.createElement("span");
@@ -48,7 +42,7 @@ document.addEventListener("DOMContentLoaded", function () {
     list.appendChild(li);
   }
 
-  // Add item on button click
+  // Add item
   addButton.addEventListener("click", function () {
     const value = input.value.trim();
     if (value !== "") {
@@ -58,16 +52,14 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 
-  // Add item on Enter key press
   input.addEventListener("keypress", function (e) {
     if (e.key === "Enter") {
       addButton.click();
     }
   });
 
-  // clear list
+  // Clear all items
   clearListBtn.addEventListener("click", function () {
     list.innerHTML = "";
   });
-
 });

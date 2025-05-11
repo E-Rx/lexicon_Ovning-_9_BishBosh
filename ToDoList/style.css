@@ -1,6 +1,8 @@
 body {
   background: #fff9f9;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding-bottom: 80px;
 }
 
 h1 {
@@ -8,7 +10,7 @@ h1 {
   font-weight: bold;
 }
 
-#instruction{
+#instruction {
   font-size: 0.9rem;
   font-style: italic;
 }
@@ -23,6 +25,7 @@ h1 {
   border-radius: 0 8px 8px 0;
   border: none;
   transition: background-color 0.3s ease;
+  color: white;
 }
 
 #addButton:hover {
@@ -38,6 +41,24 @@ h1 {
   text-decoration: line-through;
   background-color: #e0e0e0;
   color: #6c757d;
+}
+
+/* JS => CSS */
+.clickable-item {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.status-icon {
+  font-weight: bold;
+  color: #999;
+  transition: color 0.3s ease;
+}
+
+.purchased .status-icon {
+  color: green;
 }
 
 .remove-btn {
@@ -60,6 +81,7 @@ h1 {
   color: white;
   border-radius: 4px;
   border: none;
+  margin-top: 1rem;
 }
 
 #clearListBtn:hover {
